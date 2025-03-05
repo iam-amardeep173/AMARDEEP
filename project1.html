@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Amar Deep's Portfolio showcasing projects in Computer Science, including Object Detection and Sign Language Recognition.">
+  <meta name="author" content="Amar Deep">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-nqHjE8n8pEbxH/Y5d16xNNJPMInJ3lASaPRD6xxvr1N5LJb6G47FXGvSzuX6G1xKvgB1dmA4olA/JC9oQ3NYFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Amar Deep</title>
+
+  <style>
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="images/LOGO.png">
+                <img class="img-fluid rounded-circle" src="images/LOGO.png" alt="Profile Picture">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Sign Language Recognition</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Developed a system to recognize Indian Sign Language gestures from real-time video and convert them into text using deep learning models.
+          </p>
+        </div>
+       
+      </div>
+    </section>
+
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="images/12.jpeg"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                <strong>Objective:</strong> To develop a computer application capable of recognizing hand gestures in real-time for Indian Sign Language (ISL) and converting them into text.
+              </p>
+              <p class="project-details__desc-para">
+                <strong>Dataset:</strong> The INCLUDE-50 dataset was used, containing 50-word signs, 0.27 million frames, and 4,287 videos. The dataset was enhanced with additional videos created for the project.
+              </p>
+              <p class="project-details__desc-para">
+                <strong>Key Components:</strong>
+                <ul>
+                  <li><strong>Preprocessing:</strong> Video frames were captured and flipped to analyze both original and mirrored versions.</li>
+                  <li><strong>Keypoint Extraction:</strong> MediaPipe was used to extract 21 keypoints per hand and 25 keypoints from the upper body (shoulders, wrists, facial landmarks).</li>
+
+                  <li><strong>Hand Assignment:</strong> Used wrist keypoints to ensure accurate identification of left and right hands.</li>
+                  <li><strong>Parallel Processing:</strong> Processed multiple videos simultaneously to speed up preprocessing.</li>
+                </ul>
+              </p>
+              <p class="project-details__desc-para">
+                <strong>Data Augmentation:</strong> Applied rotation (+7° and -7°) and flipping transformations to improve model generalization.
+              </p>
+              <p class="project-details__desc-para">
+                <strong>Models Used:</strong>
+                <ul>
+                  <li><strong>LSTM:</strong> 8 layers, bidirectional, hidden size 256, dropout of 0.2. Achieved 27% accuracy.</li>
+                  <li><strong>Transformer:</strong> 4 hidden layers, hidden size 512, 8 attention heads, positional embeddings. Achieved 94.64% accuracy, outperforming LSTM by a significant margin.</li>
+                </ul>
+              </p>
+              <p class="project-details__desc-para">
+                <strong>Optimization:</strong> Used the Adam optimizer and implemented early stopping to improve performance.
+              </p>
+              <p class="project-details__desc-para">
+                <strong>Results:</strong> The Transformer model achieved 99% training accuracy and 94.64% test accuracy.
+              </p>
+             
+            </div>
+            <!-- Skills Used Section -->
+        <div class="project-details__tools-used">
+            
+            <p class="project-details__desc-para">
+                <strong>Technologies Used</strong> 
+              </p>
+            <div class="skills">
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">PyTorch</div>
+                <div class="skills__skill">OpenCV</div>
+                <div class="skills__skill">MediaPipe</div>
+                <div class="skills__skill">Deep Learning</div>
+                <div class="skills__skill">Transformer</div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="socialMedia d-flex justify-content-center mt-4 border p-3">
+        <a href="https://www.instagram.com/iam_amardeep173/" target="_blank" class="social-link mx-3">
+            <img src="images/insta.jpg" alt="Instagram" class="img-fluid rounded-circle">
+        </a>
+        <a href="mailto:amardeepg0706@gmail.com" target="_blank" class="social-link mx-3">
+            <img src="images/gmail.jpg" alt="Email" class="img-fluid rounded-circle">
+        </a>
+        <a href="https://www.linkedin.com/in/amardeep173/" target="_blank" class="social-link mx-3">
+            <img src="images/linked.jpeg" alt="LinkedIn" class="img-fluid rounded-circle">
+        </a>
+        <a href="https://x.com/iam_amardeep173" target="_blank" class="social-link mx-3">
+            <img src="images/14.jpg" alt="Twitter" class="img-fluid rounded-circle">
+        </a>
+        <a href="https://www.facebook.com/iamamardeep173/" target="_blank" class="social-link mx-3">
+            <img src="images/fb.png" alt="Facebook" class="img-fluid rounded-circle">
+        </a>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-lg-12 col-12">
+                    <div class="copyright-text-wrap">
+                        <p class="mb-0">
+                            <span class="copyright-text">Copyright © 2024 <a href="#">Amar Deep</a> All rights reserved.</span>
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      // JavaScript to clear form after submission
+      document.getElementById('myForm').addEventListener('submit', function() {
+        // Reset the form after submission
+        this.reset();
+      });
+    </script>
+  
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zVveE2Fs2P6bVi8S3tPm2Et6z" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
